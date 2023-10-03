@@ -1,7 +1,7 @@
 # API Documentation
 
 Welcome to the API documentation for our book and bookstore management API. This API provides endpoints to manage authors, books, bookstores, and owners. Please ensure you have proper authentication by including the token in the request headers for accessing the endpoints.
-To check and visit use **https://bookstoreapi-43o4.onrender.com/** followed different Endpoints
+To check and visit use **https://bookstoreapi-43o4.onrender.com/** followed different Endpoints explained below.
 
 ## 1. Authors Endpoints
 
