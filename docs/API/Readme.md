@@ -508,8 +508,7 @@ Update details of an existing bookstore.
 - `id` (integer) - The ID of the bookstore to be updated.
 
 - **Request Body:**
-
-    ```json
+  ```json
     {
     "id":1,
     "name": "Updated Bookstore Name",
@@ -517,7 +516,7 @@ Update details of an existing bookstore.
     "created": "2023-10-03T04:14:35.137Z",
     "updated": "2023-10-03T04:14:35.137Z"
     }
-    ```
+   ```
 
 **Response:**
 
