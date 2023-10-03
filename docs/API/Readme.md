@@ -1,6 +1,6 @@
 # API Documentation
 
-Welcome to the API documentation for our bookstore management system. This API provides endpoints to manage authors, books, bookstores, and owners. Please ensure you have proper authentication by including the token in the request headers for accessing the endpoints.
+Welcome to the API documentation for our book and bookstore management API. This API provides endpoints to manage authors, books, bookstores, and owners. Please ensure you have proper authentication by including the token in the request headers for accessing the endpoints.
 
 ## 1. Authors Endpoints
 
