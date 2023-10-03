@@ -1,7 +1,31 @@
 # API Documentation
 
 Welcome to the API documentation for our book and bookstore management API. This API provides endpoints to manage authors, books, bookstores, and owners. Please ensure you have proper authentication by including the token in the request headers for accessing the endpoints.
-To use this API use  **https://bookstoreapi-43o4.onrender.com/** followed different Endpoints explained below. for example **https://bookstoreapi-43o4.onrender.com/api/owners/signup**
+To use this API use **https://bookstoreapi-43o4.onrender.com/** followed different Endpoints explained below. for example **https://bookstoreapi-43o4.onrender.com/api/owner/signup**
+
+## Endpoints
+
+1. [Authors Endpoints](#1-authors-endpoints)
+   - [Get All Authors](#get-all-authors)
+   - [Get Single Author](#get-single-author)
+   - [Add an Author](#add-an-author)
+   - [Update an Author](#update-an-author)
+   - [Delete an Author](#delete-an-author)
+2. [Books Endpoints](#2-books-endpoints)
+   - [Get All Books](#get-all-books)
+   - [Get Single Book](#get-single-book)
+   - [Add a Book](#add-a-book)
+   - [Update a Book](#update-a-book)
+   - [Delete a Book](#delete-a-book)
+3. [Bookstores Endpoints](#3-bookstores-endpoints)
+   - [Get All Bookstores](#get-all-bookstores)
+   - [Get Single Bookstore](#get-single-bookstore)
+   - [Add a Bookstore](#add-a-bookstore)
+   - [Update a Bookstore](#update-a-bookstore)
+   - [Delete a Bookstore](#delete-a-bookstore)
+4. [Owners Endpoints](#4-owners-endpoints)
+   - [Owner Signup](#owner-signup)
+   - [Owner Login](#owner-login)
 
 ## 1. Authors Endpoints
 
@@ -36,7 +60,6 @@ Retrieve a list of all authors.
       "created": "2023-09-27T04:23:43.348Z",
       "updated": "2023-09-27T04:23:43.348Z"
     }
-    
   ]
   ```
 - **404 Not Found**
@@ -84,13 +107,13 @@ Retrieve details of a specific author.
 
 Add a new author.
 
-**Request Body:**
+- **Request Body:**
 
-```json
-{
-  "name": "Author Name"
-}
-```
+  ```json
+  {
+    "name": "Author Name"
+  }
+  ```
 
 **Response:**
 
@@ -120,13 +143,13 @@ Update details of an existing author.
 
 - `id` (integer) - The ID of the author to be updated.
 
-**Request Body:**
+- **Request Body:**
 
-```json
-{
-  "name": "Updated Author Name"
-}
-```
+  ```json
+  {
+    "name": "Updated Author Name"
+  }
+  ```
 
 **Response:**
 
@@ -254,11 +277,11 @@ Retrieve details of a specific book.
   ```
 - **500 Internal Server Error**
 
-```json
-{
-  "message": "Internal Server Error"
-}
-```
+  ```json
+  {
+    "message": "Internal Server Error"
+  }
+  ```
 
 ---
 
@@ -268,17 +291,17 @@ Retrieve details of a specific book.
 
 Add a new book.
 
-**Request Body:**
+- **Request Body:**
 
-```json
-{
-  "authorId": 1,
-  "bookstoreId": 1,
-  "title": "book title",
-  "price": 10,
-  "image": " "
-}
-```
+  ```json
+  {
+    "authorId": 1,
+    "bookstoreId": 1,
+    "title": "book title",
+    "price": 10,
+    "image": " "
+  }
+  ```
 
 **Response:**
 
@@ -314,17 +337,17 @@ Update details of an existing book.
 
 - `id` (integer) - The ID of the book to be updated.
 
-**Request Body:**
+- **Request Body:**
 
-```json
-{
-  "authorId": 5,
-  "bookstoreId": 1,
-  "title": "Javascript - The Missing Manual2",
-  "price": 9,
-  "image": " "
-}
-```
+  ```json
+  {
+    "authorId": 5,
+    "bookstoreId": 1,
+    "title": "Javascript - The Missing Manual2",
+    "price": 9,
+    "image": " "
+  }
+  ```
 
 **Response:**
 
@@ -467,14 +490,14 @@ Retrieve details of a specific bookstore.
 
 Add a new bookstore.
 
-**Request Body:**
+- **Request Body:**
 
-```json
-{
-  "name": "Bookstore Name",
-  "location": "Location"
-}
-```
+  ```json
+  {
+    "name": "Bookstore Name",
+    "location": "Location"
+  }
+  ```
 
 **Response:**
 
@@ -509,14 +532,14 @@ Update details of an existing bookstore.
 
 - **Request Body:**
   ```json
-    {
-    "id":1,
+  {
+    "id": 1,
     "name": "Updated Bookstore Name",
     "location": "Updated Location",
     "created": "2023-10-03T04:14:35.137Z",
     "updated": "2023-10-03T04:14:35.137Z"
-    }
-   ```
+  }
+  ```
 
 **Response:**
 
@@ -574,15 +597,15 @@ Delete a bookstore.
 
 Register a new owner.
 
-**Request Body:**
+- **Request Body:**
 
-```json
-{
-  "name": "Owner Name",
-  "email": "owner@example.com",
-  "password": "password"
-}
-```
+  ```json
+  {
+    "name": "Owner Name",
+    "email": "owner@example.com",
+    "password": "password"
+  }
+  ```
 
 **Response:**
 
@@ -619,14 +642,14 @@ Register a new owner.
 
 Login for an existing owner.
 
-**Request Body:**
+- **Request Body:**
 
-```json
-{
-  "email": "owner@example.com",
-  "password": "password"
-}
-```
+  ```json
+  {
+    "email": "owner@example.com",
+    "password": "password"
+  }
+  ```
 
 **Response:**
 
