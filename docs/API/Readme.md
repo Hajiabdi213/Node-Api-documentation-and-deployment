@@ -507,7 +507,7 @@ Update details of an existing bookstore.
 
 - `id` (integer) - The ID of the bookstore to be updated.
 
-**Request Body:**
+- **Request Body:**
 
     ```json
     {
