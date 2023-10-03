@@ -36,7 +36,7 @@ Retrieve a list of all authors.
       "created": "2023-09-27T04:23:43.348Z",
       "updated": "2023-09-27T04:23:43.348Z"
     }
-    // ...
+    
   ]
   ```
 - **404 Not Found**
