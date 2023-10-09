@@ -43,14 +43,15 @@ router.get("/:id", authenticate, async (req, res) => {
 // ADD BOOKSTORE      POST: /api/bookstores
 router.post("/", authenticate, async (req, res) => {
   try {
-    const { name,location } = req.body;
+    const { name,location, ownerId } = req.body;
     if (!name) {
       res.status(400).json({ message: "Please enter bookstore's name" });
     } else {
       const bookstore = await prisma.bookStore.create({
         data: {
           name: name,
-          location:location
+          location:location,
+          ownerId:ownerId
         },
       });
       res.status(201).json(bookstore);
