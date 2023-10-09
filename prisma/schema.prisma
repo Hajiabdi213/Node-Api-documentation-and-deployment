@@ -18,6 +18,8 @@ model BookStore {
   updated  DateTime @default(now())
 
   book Book[]
+  Owner Owner  @relation(fields: [ownerId], references: [id])
+
 }
 
 model Author {
@@ -50,4 +52,6 @@ model Owner {
   password String
   created  DateTime @default(now())
   updated  DateTime @default(now())
+  bookstore BookStore[]
+
 }
